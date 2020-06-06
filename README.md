@@ -1,5 +1,10 @@
 The goal of this repository is to store the Dockerfiles I use for dev.
 
+sudo docker pull gissehel/squid-open
+
+sudo docker run --name squid -d --restart=always --publish 3128:3128 --volume /srv/docker/squid/cache:/var/spool/squid gissehel/squid-open
+
+
 Thoses images fit my needs so won't be very usefull for anyone else.
 
  [![](https://images.microbadger.com/badges/image/gissehel/ubuntu-sshd.svg)](https://microbadger.com/images/gissehel/ubuntu-sshd "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/gissehel/ubuntu-sshd.svg)](https://microbadger.com/images/gissehel/ubuntu-sshd "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/gissehel/ubuntu-sshd.svg)](https://microbadger.com/images/gissehel/ubuntu-sshd "Get your own commit badge on microbadger.com") [gissehel/ubuntu-sshd](https://hub.docker.com/r/gissehel/ubuntu-sshd)
